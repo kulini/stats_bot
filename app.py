@@ -3,18 +3,6 @@ import time
 import re
 import csv
 from slackclient import SlackClient
-import flask
-app = flask.Flask(__name__)
-
-@app.route("/")
-def index():
-    #do whatevr here...
-    return "Hello Heruko"
-
-# instantiate Slack client
-slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
-# starterbot's user ID in Slack: value is assigned after the bot starts up
-starterbot_id = None
 
 # constants
 RTM_READ_DELAY = 1 # 1 second delay between reading from RTM
