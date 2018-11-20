@@ -55,7 +55,7 @@ def handle_command(command, channel):
     # Finds and executes the given command, filling in response
     response = None
     # This is where you start to implement more commands!
-    if command.endswith("?"):
+    if command.endswith("?") or command.endswith("!") or command.endswith("."):
         command = command[:-1]
         # print(f"command is {command}")
     parsed_command = command.lower().split(" ")
