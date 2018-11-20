@@ -1,1 +1,1 @@
-worker: python bot.py
+Web: unicorn bot:app
