@@ -15,6 +15,8 @@ QUESTION_COMMAND = "quiz me"
 ANSWER_COMMAND = "answer"
 MENTION_REGEX = "^<@(|[WU].+?)>(.*)"
 
+print("I'm here")
+
 def parse_bot_commands(slack_events):
     """
         Parses a list of events coming from the Slack RTM API to find bot commands.
